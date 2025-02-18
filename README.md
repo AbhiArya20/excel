@@ -6,7 +6,7 @@ This project was part of my learning journey, where I understood the importance 
 
 <div style="display:flex; flex-wrap:wrap; margin:3rem; justify-content:center;">
 <p align="center">
-<img style="width:80%; min-width:300px; height:auto" src="./assets/readme-video.webp" alt="Project Video">
+<img style="width:100%; min-width:300px; height:auto" src="./assets/readme-video.gif" alt="Project Video">
 </p>
 </div>
 
