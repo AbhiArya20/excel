@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lobster&family=Pacifico&family=Roboto:ital,wght@1,100;1,400;1,700&display=swap");
+
+/* Default styling */
+* {
+  padding: 0;
+  margin: 0;
+  /* font-size: 62.5%; */
+  box-sizing: border-box;
+}
+
+/* utility class */
+.fix-height {
+  height: 3rem;
+}
+option[value="Arial"]{
+    font-family: 'Arial';
+}
+option[value="Caveat"]{
+    font-family: 'Caveat';
+    
+}
+option[value="Impact"]{
+    font-family: 'Impact';
+}
+option[value="Lobster"]{
+    font-family: 'Lobster';
+}
+option[value="monospace"]{
+    font-family: 'monospace';
+}
+option[value="Pacifico"]{
+    font-family: 'Pacifico';
+}
+option[value="Roboto"]{
+    font-family: 'Roboto';
+}
+option[value="Courier New"]{
+    font-family: 'Courier New';
+}
+option[value="Segoe"]{
+    font-family: 'Segoe';
+}
+option[value="Times New Roman"]{
+    font-family: 'Times New Roman';
+}
+option[value="serif"]{
+    font-family: 'serif';
+}
+option[value="Tahoma"]{
+    font-family: 'Tahoma';
+}
+option[value="sans-serif"]{
+    font-family: 'sans-serif';
+}
+option[value="Trebuchet"]{
+    font-family: 'Trebuchet';
+}
+option[value="Geneva"]{
+    font-family: 'Geneva';
+}
+
+/* Menu-Bar style */
+.page-actions-cont {
+  background-color: #218c74;
+  display: flex;
+  align-items: flex-end;
+}
+.page-action {
+  width: 3.5rem;
+  height: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f1f2f6;
+}
+
+/* Tool-Bar style */
+.cellprops-action-cont {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ecf0f1;
+  padding-left: 1rem;
+}
+.cellprops-action-cont > * {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.cellprops-action-cont > *:hover {
+  cursor: pointer;
+}
+.cellprops-action-cont > div > *:hover {
+  cursor: pointer;
+}
+.font-family-prop,
+.font-size-prop {
+  padding: 0.2rem;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+.color-prop {
+  position: relative;
+}
+.color-prop > input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.selected-page-action{
+  background-color: #ecf0f1;
+  color: #218c74;
+}
+
+/* Fotmula-Bar style */
+.formula-action-cont {
+  background-color: #ecf0f1;
+  display: flex;
+  padding-left: 1rem;
+  align-items: center;
+  height: 2rem;
+}
+.formula-action-cont > input {
+  border: none;
+  outline: none;
+  height: 70%;
+}
+.formula-action-cont > * {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+.formula-icon {
+  width: 1.2rem;
+}
+.address-bar {
+  width: 5rem;
+  text-align: center;
+}
+.formula-bar {
+  width: calc(100vw - 5rem - 2.1rem);
+  padding-left: 0.5rem;
+}
+
+/* Grid and Cells style */
+.grid-cont {
+  height: calc(100vh - 3rem * 3 - 2rem);
+  position: relative;
+  overflow: auto;
+  background-color: #ecf0f1;
+}
+.top-left-dummy {
+  height: 2rem;
+  width: 2rem;
+  background-color: #747d8c;
+  position: fixed;
+  z-index: 5;
+}
+
+.address-col-cont {
+  width: 2rem;
+  position: sticky;
+  top: 2rem;
+  left: 0rem;
+  background-color: #dbdddf;
+  z-index: 2;
+}
+.address-row-cont {
+  display: flex;
+  position: sticky;
+  top: 0rem;
+  left: 2rem;
+  background-color: #dbdddf;
+  z-index: 2;
+  border-top: none;
+}
+.cells-cont {
+  position: absolute;
+  top: 0rem;
+  left: 2rem;
+}
+.address-col {
+  height: 2rem;
+  min-width: 2rem;
+  max-width: 6rem;
+  border: 1px solid #dfe4ea;
+  text-align: center;
+}
+.address-row {
+  height: 2rem;
+  width: 10rem;
+  border: 1px solid #dfe4ea;
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell {
+  height: 2rem;
+  width: 10rem;
+  border: 1px solid #dfe4ea;
+  outline: none;
+  overflow: hidden;
+  padding: 6px;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cell:hover {
+  overflow: visible;
+}
+.row-cont {
+  display: flex;
+}
+
+/* Sheet-No style */
+.sheet-action-cont {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+  background-color: #ecf0f1;
+}
+.sheet-action-cont > * {
+  display: inline-block;
+}
+.sheet-add-icon {
+  width: 4.1vw;
+}
+.sheet-add-icon:hover {
+  cursor: pointer;
+}
+
+.sheets-folder-cont {
+  display: flex;
+  align-items: center;
+  height: 70%;
+  width: calc(100vw - 4.1vw);
+  overflow: auto;
+}
+.sheet-folder {
+  height: 80%;
+  width: 5rem;
+  font-weight: bold;
+}
+.sheet-folder:hover{
+  cursor: pointer;
+}
+.sheet-content{
+  height: 100%;
+  width:  100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: .3rem;
+}
+
+footer{
+  position: sticky;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .cellprops-action-cont{
+    padding: .3rem;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .cellprops-action-cont{
+    padding: .3rem;
+    height: 6rem;
+  }
+}
